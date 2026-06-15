@@ -1,4 +1,4 @@
-const BASE_URL = 'https://codealpha-shortlink.onrender.com:8080/api/url';
+const BASE_URL = 'https://codealpha-shortlink.onrender.com/api/url';
 
     const form = document.getElementById('shorten-form');
     const input = document.getElementById('url-input');
@@ -91,7 +91,7 @@ const BASE_URL = 'https://codealpha-shortlink.onrender.com:8080/api/url';
 
         hideBanner();
       } catch (err) {
-        showBanner('Couldn\'t reach the server — check that it\'s running on localhost:8080.', true);
+        showBanner('Couldn\'t reach the server — check that it\'s', true);
       }
     }
 
