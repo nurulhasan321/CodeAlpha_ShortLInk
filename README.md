@@ -1,2 +1,2 @@
 # CodeAlpha_ShortLInk
-A URL shortener built with Spring Boot, JPA, and a vanilla HTML/CSS/JS frontend — generate short links, track click counts, and redirect via custom short codes.
+ShortLink is a full-stack URL shortener. The backend, built with Spring Boot and Spring Data JPA, generates short codes for long URLs, tracks click counts, and handles redirects. The frontend is a lightweight HTML/CSS/JS interface for generating and viewing shortened links in real time.
