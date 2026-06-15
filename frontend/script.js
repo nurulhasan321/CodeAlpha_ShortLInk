@@ -1,4 +1,4 @@
-const BASE_URL = 'https://codealpha-shortlink.onrender.com/api/url';
+const BASE_URL = 'https://codealpha-shortlink.onrender.com:8080/api/url';
 
     const form = document.getElementById('shorten-form');
     const input = document.getElementById('url-input');
