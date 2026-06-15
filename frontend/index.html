@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shorten — link compressor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+  
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="eyebrow">link compressor</p>
+      <h1>Make it <span>short.</span></h1>
+      <p class="sub">Paste a long URL below. We'll squeeze it down to something you can actually share.</p>
+    </header>
+
+    <form id="shorten-form" novalidate>
+      <label for="url-input">Long URL</label>
+      <div class="input-row">
+        <input
+          type="url"
+          id="url-input"
+          name="originalUrl"
+          placeholder="https://example.com/your/very/long/path?with=params"
+          required
+          pattern="https?://.+"
+          autocomplete="off"
+        />
+        <button type="submit" id="submit-btn">Generate link</button>
+      </div>
+      <p class="hint" id="hint">Must start with http:// or https://</p>
+    </form>
+
+    <div class="banner" id="banner"></div>
+
+    <section>
+      <div class="section-head">
+        <h2>Your links</h2>
+        <span class="count" id="count">0 total</span>
+      </div>
+      <div id="cards">
+        <div class="empty" id="empty-state">
+          <b>Nothing here yet</b>
+          Generate your first short link above — it'll show up in this list.
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
