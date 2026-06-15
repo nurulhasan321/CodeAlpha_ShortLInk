@@ -35,7 +35,7 @@ public class UrlService {
         urlRepo.save (savedUrl);
 
         return new CreateUrlResponse(
-                "http://localhost:8080/"+savedUrl.getShortCode (),
+                "https://codealpha-shortlink.onrender.com/"+savedUrl.getShortCode (),
                 savedUrl.getOriginalUrl (),
                 savedUrl.getCreatedAt ().format (formatter),
                 savedUrl.getClickCount ()
@@ -67,7 +67,7 @@ public class UrlService {
                 url.getOriginalUrl (),
                 url.getClickCount (),
                 url.getCreatedAt ().format (formatter),
-                "http://localhost:8080/"+url.getShortCode ()
+                "https://codealpha-shortlink.onrender.com/"+url.getShortCode ()
         )).toList ();
     }
 
